@@ -59,3 +59,6 @@ If you have any questions or need further assistance, please contact Arif Hussai
    ```bash
    git clone https://github.com/starrvarse/fdds-software.git
    cd fdds-software
+## Python integration
+      https://pypi.org/project/fdds/
+      pip install fdds
