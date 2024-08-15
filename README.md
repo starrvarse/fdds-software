@@ -12,6 +12,47 @@ FDDS is an advanced, fully custom-built database system designed to offer a rich
 - **Security:** User authentication, role-based access control, and data encryption.
 - **Cross-Platform Compatibility:** Fully implemented in Python, compatible with Windows, macOS, and Linux.
 
+Set up the environment:
+
+Install the required Python packages:
+"python setup_environment.py"
+
+Run the Application:
+
+Start the Flask server:
+"python -m fdds.api.api_layer"
+
+Usage
+Upload a File
+To upload a file:
+bash
+Copy code
+{curl -X POST http://127.0.0.1:5000/api/upload_file -F "image=@path/to/your/file.ext"}
+
+Download a File
+To download a file:
+bash
+Copy code
+{curl -O http://127.0.0.1:5000/api/download_file/your_file.ext}
+
+Delete a File
+To delete a file:
+bash
+Copy code
+{curl -X DELETE http://127.0.0.1:5000/api/delete_file/your_file.ext}
+
+Execute FDQL Query
+To execute an FDQL query:
+bash
+Copy code
+{curl -X POST http://127.0.0.1:5000/api/query -H "Content-Type: application/json" -d "{\"query\": \"YOUR FDQL QUERY HERE\"}"}
+
+Contributing
+We welcome contributions! Please open an issue or submit a pull request.
+
+Contact
+If you have any questions or need further assistance, please contact Arif Hussain at starrvarse@gmail.com
+
 ## Installation
 
 1. **Clone the repository:**
